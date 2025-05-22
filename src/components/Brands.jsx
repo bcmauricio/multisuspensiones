@@ -1,6 +1,5 @@
 import React from "react";
 
-// Agrega los logos en tu carpeta assets y asegúrate de importar correctamente
 import vazlo from "../assets/vazlo.png";
 import cecra from "../assets/cecra.png";
 import acp from "../assets/acp.png";
@@ -25,8 +24,10 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="bg-white py-16 px-6 text-center" id="brands">
-      <h2 className="text-3xl font-bold uppercase mb-10">Trabajamos con las mejores marcas</h2>
+    <section className="bg-white py-20 px-6 text-center font-zabal" id="brands">
+      <h2 className="text-4xl font-black italic text-yellow-500 uppercase mb-12">
+        Trabajamos con las mejores marcas
+      </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-center max-w-6xl mx-auto">
         {brands.map((brand, idx) => (
           <div key={idx} className="flex items-center justify-center">

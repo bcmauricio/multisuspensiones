@@ -1,21 +1,40 @@
 import React from "react";
 
-const Testimonials = () => {
+export default function Testimonials() {
+  const testimonios = [
+    {
+      texto: "Excelente servicio, muy buena atención.",
+      autor: "Juan Pérez",
+    },
+    {
+      texto: "Las refacciones llegaron rápido y todo bien.",
+      autor: "Ana Gómez",
+    },
+    {
+      texto: "Buen surtido, buen precio y garantía clara.",
+      autor: "Luis Ramírez",
+    },
+  ];
+
   return (
-    <section className="bg-white py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">Testimonios de Clientes</h2>
-      <div className="max-w-4xl mx-auto space-y-6">
-        <blockquote className="bg-gray-100 p-4 rounded shadow">
-          <p className="italic">"Excelente servicio, muy buena atención."</p>
-          <footer className="text-right mt-2">– Juan Pérez</footer>
-        </blockquote>
-        <blockquote className="bg-gray-100 p-4 rounded shadow">
-          <p className="italic">"Las refacciones llegaron rápido y todo bien."</p>
-          <footer className="text-right mt-2">– Ana Gómez</footer>
-        </blockquote>
+    <section className="bg-white py-20 px-6 font-zabal" id="testimonios">
+      <h2 className="text-4xl font-black italic text-yellow-500 text-center uppercase mb-12">
+        Testimonios de Clientes
+      </h2>
+
+      <div className="max-w-5xl mx-auto grid gap-8 md:grid-cols-3">
+        {testimonios.map((item, idx) => (
+          <blockquote
+            key={idx}
+            className="bg-gray-100 p-6 rounded-xl shadow-md text-gray-800 text-left"
+          >
+            <p className="italic text-lg mb-4">“{item.texto}”</p>
+            <footer className="text-right text-sm font-medium">
+              – {item.autor}
+            </footer>
+          </blockquote>
+        ))}
       </div>
     </section>
   );
-};
-
-export default Testimonials;
+}

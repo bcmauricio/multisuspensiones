@@ -8,8 +8,8 @@ module.exports = {
         gris: '#706F6F',
       },
       fontFamily: {
-        sans: ['"Trade Marker"', 'sans-serif'],
-      },
+      zabal: ['Zabal', 'sans-serif'],
+    },
     },
   },
   plugins: [],

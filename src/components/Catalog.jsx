@@ -25,14 +25,26 @@ const productos = [
 
 export default function Catalog() {
   return (
-    <section className="bg-white text-black py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold uppercase mb-10">Catálogo de Refacciones</h2>
+    <section className="bg-white text-black py-20 px-6 text-center font-zabal" id="catalog">
+      <h2 className="text-4xl font-black italic uppercase mb-12 text-yellow-500 tracking-wide">
+        Catálogo de Refacciones
+      </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {productos.map((producto, idx) => (
-          <div key={idx} className="shadow-lg rounded-lg overflow-hidden bg-white">
-            <img src={producto.imagen} alt={producto.nombre} className="w-full h-48 object-cover" />
+          <div
+            key={idx}
+            className="bg-gray-100 shadow-md rounded-xl overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src={producto.imagen}
+              alt={producto.nombre}
+              className="w-full h-48 object-cover"
+            />
             <div className="p-4">
-              <h3 className="text-xl font-semibold">{producto.nombre}</h3>
+              <h3 className="text-lg font-semibold italic text-gray-800">
+                {producto.nombre}
+              </h3>
             </div>
           </div>
         ))}

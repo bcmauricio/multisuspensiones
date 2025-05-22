@@ -11,6 +11,9 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Brands from "../components/Brands";
+import ScrollToTop from "../components/ScrollToTop";
+import Delivery from "../components/Delivery";
+
 
 
 export default function Home() {
@@ -19,6 +22,7 @@ export default function Home() {
       <div className="pt-20">
         <Navbar /> 
         <Hero />
+        <Delivery />
         <About />
         <Catalog />
         <WhatsApp />
@@ -29,6 +33,7 @@ export default function Home() {
         <ContactForm />
         <Footer />
         <FloatingWhatsApp />
+        <ScrollToTop />
       </div>
     </main>
   );

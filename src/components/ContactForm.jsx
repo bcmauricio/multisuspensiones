@@ -2,13 +2,15 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <section className="py-20 bg-white px-4 text-center" id="contact">
-      <h2 className="text-4xl font-extrabold uppercase mb-6">Contáctanos</h2>
-      <p className="max-w-2xl mx-auto text-lg mb-10">
+    <section className="py-20 bg-white px-4 text-center font-zabal" id="contact">
+      <h2 className="text-4xl font-black italic text-yellow-500 uppercase mb-6">
+        Contáctanos
+      </h2>
+      <p className="max-w-2xl mx-auto text-lg font-medium text-gray-700 mb-10">
         ¿Tienes dudas o necesitas una cotización? ¡Escríbenos y con gusto te atenderemos!
       </p>
 
-      <form className="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow space-y-6 text-left">
+      <form className="max-w-xl mx-auto bg-gray-50 p-8 rounded-xl shadow space-y-6 text-left">
         <div>
           <label className="block mb-1 font-semibold">Nombre</label>
           <input
@@ -37,7 +39,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-full bg-black text-white py-3 font-bold rounded hover:bg-yellow-500 hover:text-black transition"
+          className="w-full bg-yellow-400 text-black py-3 font-bold rounded hover:bg-yellow-500 transition"
         >
           Enviar mensaje
         </button>

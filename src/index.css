@@ -5,3 +5,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Zabal';
+  src: url('/fonts/zabal/ZabalDEMO-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Zabal';
+  src: url('/fonts/zabal/ZabalDEMO-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Zabal';
+  src: url('/fonts/zabal/ZabalDEMO-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Zabal';
+  src: url('/fonts/zabal/ZabalDEMO-Black.otf') format('opentype');
+  font-weight: 900;
+}
