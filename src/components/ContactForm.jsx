@@ -2,11 +2,11 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <section className="py-20 bg-white px-4 text-center font-zabal" id="contact">
+    <section className="py-20 bg-black px-4 text-center font-zabal" id="contact">
       <h2 className="text-4xl font-black italic text-yellow-500 uppercase mb-6">
         Contáctanos
       </h2>
-      <p className="max-w-2xl mx-auto text-lg font-medium text-gray-700 mb-10">
+      <p className="max-w-2xl mx-auto text-lg font-medium text-white mb-10">
         ¿Tienes dudas o necesitas una cotización? ¡Escríbenos y con gusto te atenderemos!
       </p>
 

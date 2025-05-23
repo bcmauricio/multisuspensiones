@@ -6,8 +6,8 @@ import img4 from "../assets/ig4.png";
 
 export default function InstagramFeed() {
   return (
-    <section className="bg-gray-100 py-20 px-4 text-center font-zabal">
-      <h2 className="text-4xl font-black italic uppercase text-yellow-500 mb-10">
+    <section className="bg-yellow-400 py-20 px-4 text-center font-zabal">
+      <h2 className="text-4xl font-black italic uppercase text-black mb-10">
         Síguenos en Instagram
       </h2>
 
@@ -26,12 +26,12 @@ export default function InstagramFeed() {
         ))}
       </div>
 
-      <p className="mt-10 text-lg">
+      <p className="mt-10 text-lg text-black">
         <a
           href="https://www.instagram.com/multisuspensiones/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-yellow-500 underline font-medium hover:text-yellow-600 transition"
+          className="text-black underline font-medium hover:text-yellow-700 transition"
         >
           Ver más en nuestro perfil →
         </a>

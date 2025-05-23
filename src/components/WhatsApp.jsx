@@ -5,7 +5,7 @@ const numeros = [
   { label: "663 211 6684", link: "526632116684" },
   { label: "664 348 9665", link: "526643489665" },
   { label: "664 316 5404", link: "526643165404" },
-  { label: "Sucursal: 977.6511", link: null },
+  { label: "Sucursal: 664 977 6511", link: null },
 ];
 
 export default function WhatsApp() {

@@ -8,28 +8,24 @@ export default function Garantias() {
         Nuestras Garantías
       </h2>
 
-      <p className="max-w-2xl mx-auto text-lg font-medium text-gray-700 mb-12">
-        En <strong>Multisuspensiones del Norte</strong> respaldamos cada producto que ofrecemos. 
-        Compra con seguridad gracias a nuestras políticas claras de garantía y devolución.
-      </p>
+     <p className="max-w-2xl mx-auto text-lg leading-relaxed font-medium text-gray-700 mb-12">
+  En <strong className="text-black font-bold">Multisuspensiones del Norte</strong>, nos comprometemos con la calidad de cada producto que ofrecemos. 
+  Compra con tranquilidad gracias a nuestras <span className="text-yellow-500 font-semibold">garantías claras</span> y políticas de devolución sencillas.
+</p>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-6xl mx-auto mb-16">
-        <div className="bg-yellow-400 text-black rounded-xl p-6 shadow-md w-72">
+
+      <div className="flex flex-col md:flex-row justify-center items-stretch gap-10 max-w-6xl mx-auto mb-16">
+        <div className="bg-yellow-400 text-black rounded-xl p-6 shadow-md w-72 flex flex-col justify-center items-center text-center">
           <h3 className="text-2xl font-bold italic mb-2">Hasta 5 años</h3>
           <p className="text-lg">de garantía en amortiguadores</p>
         </div>
 
-        <div className="bg-yellow-400 text-black rounded-xl p-6 shadow-md w-72">
+        <div className="bg-yellow-400 text-black rounded-xl p-6 shadow-md w-72 flex flex-col justify-center items-center text-center">
           <h3 className="text-2xl font-bold italic mb-2">1 año</h3>
           <p className="text-lg">en suspensión y dirección</p>
         </div>
-
-        <img
-          src={garantia}
-          alt="Certificado de garantía"
-          className="w-40 md:w-52 rounded border border-black"
-        />
       </div>
+
 
       <div className="bg-gray-100 text-left max-w-4xl mx-auto p-6 rounded-xl shadow">
         <h3 className="text-2xl font-bold italic text-yellow-600 mb-4">

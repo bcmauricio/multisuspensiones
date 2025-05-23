@@ -7,13 +7,13 @@ export default function About() {
         ¿Quiénes somos?
       </h2>
 
-      <p className="max-w-3xl mx-auto text-lg leading-relaxed mb-12 font-medium text-gray-800">
-        En <strong>Multisuspensiones del Norte</strong>, nos especializamos en refacciones
-        para suspensión y dirección automotriz. Con más de 5 años de experiencia, ayudamos a
-        que tu vehículo mantenga su máximo rendimiento con piezas de calidad, precios
-        competitivos y atención al cliente que realmente marca la diferencia. <br />
-        Ubicados en Tijuana, somos tu refaccionaria de confianza.
-      </p>
+      <p className="max-w-3xl mx-auto text-lg leading-relaxed mb-12 font-medium text-gray-800 text-justify">
+  En <strong>Multisuspensiones del Norte</strong>, nos especializamos en refacciones para suspensión y dirección automotriz. <br />
+  Con más de 5 años de experiencia, ayudamos a que tu vehículo mantenga su máximo rendimiento con piezas de calidad. <br />
+  Precios competitivos y atención al cliente que realmente marca la diferencia. <br />
+  Ubicados en Tijuana, somos tu refaccionaria de confianza.
+</p>
+
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-left">
         <div className="bg-gray-100 p-6 rounded-xl shadow-sm">

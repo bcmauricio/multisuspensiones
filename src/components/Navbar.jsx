@@ -7,11 +7,6 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-amarillo z-50 py-3 px-6 shadow-md font-zabal">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <img
-          src={isologo}
-          alt="MS Isologo"
-          className="h-14 md:h-16"
-        />
 
         {/* Botón hamburguesa */}
         <button
