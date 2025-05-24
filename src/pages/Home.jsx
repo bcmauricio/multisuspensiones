@@ -22,14 +22,14 @@ export default function Home() {
       <div className="pt-20">
         <Navbar /> 
         <Hero />
-        <Delivery />
         <About />
-        <Catalog />
+        <Brands />
+         <Catalog />
+        <Delivery />
         <WhatsApp />
         <Garantias />
-        <Brands />
-        <InstagramFeed />
         <Testimonials />
+        <InstagramFeed />
         <ContactForm />
         <Footer />
         <FloatingWhatsApp />

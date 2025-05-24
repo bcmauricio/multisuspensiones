@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import isologo from "../assets/ISOLOGO-MS-COLOR.png";
+import isologo from "../assets/LOGO COLOR.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,9 +8,19 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-amarillo z-50 py-3 px-6 shadow-md font-zabal">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
+        {/* Logo a la izquierda */}
+        <div className="flex items-center">
+         <img
+            src={isologo}
+            alt="Logo MS"
+            className="h-24 md:h-28 object-contain max-w-[280px]"
+          />
+
+        </div>
+
         {/* Botón hamburguesa */}
         <button
-          className="md:hidden text-black focus:outline-none"
+          className="md:hidden text-black focus:outline-none ml-auto"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -28,11 +38,11 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Menú */}
+        {/* Menú a la derecha */}
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-amarillo text-center text-sm md:static md:flex md:items-center md:gap-6 md:w-auto md:bg-transparent`}
+          } absolute top-full left-0 w-full bg-amarillo text-center text-sm md:static md:flex md:items-center md:gap-6 md:w-auto md:bg-transparent ml-auto`}
         >
           <li className="p-3 md:p-0">
             <a
@@ -67,15 +77,14 @@ export default function Navbar() {
             </a>
           </li>
           <li className="p-3 md:p-0">
-  <a
-    href="https://tutienda.com"
-    target="_blank"
-    className="text-black font-medium italic tracking-wide hover:text-white transition"
-  >
-    Tienda
-  </a>
-</li>
-
+            <a
+              href="https://tutienda.com"
+              target="_blank"
+              className="text-black font-medium italic tracking-wide hover:text-white transition"
+            >
+              Tienda
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

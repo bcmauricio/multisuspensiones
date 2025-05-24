@@ -1,63 +1,65 @@
 import React from "react";
+import asesor from "../assets/COTIZA.png";
 import qr from "../assets/qr-whatsapp.png";
-import cotiza from "../assets/COTIZA.png";
 
-export default function WhatsApp() {
+const WhatsApp = () => {
   return (
-    <section className="bg-yellow-400 py-20 px-4 text-center font-zabal" id="whatsapp">
-      <h2 className="text-4xl font-black italic uppercase text-black mb-4">
-        Cotiza por WhatsApp
-      </h2>
-      <p className="text-lg mb-10 text-black">
-        ¡Atención personalizada, fácil y rápida!
-      </p>
+    <section className="bg-yellow-400 text-black py-10 font-zabal">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-2xl md:text-3xl font-black italic mb-1">
+          COTIZA POR WHATSAPP
+        </h2>
+        <p className="mb-6 text-sm md:text-base">
+          ¡Atención personalizada, fácil y rápida!
+        </p>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-6xl mx-auto">
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <img
-            src={cotiza}
-            alt="Asesor"
-            className="w-32 md:w-40 lg:w-48 object-contain"
+            src={asesor}
+            alt="asesor whatsapp"
+            className="w-40 md:w-48 lg:w-56 object-contain"
           />
-        </div>
 
-        <div className="flex flex-col items-center space-y-4">
-          <a
-            href="https://wa.me/526632116684"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black font-bold px-6 py-3 rounded shadow hover:bg-yellow-300 transition"
-          >
-            663 211 6684
-          </a>
-          <a
-            href="https://wa.me/526643489665"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black font-bold px-6 py-3 rounded shadow hover:bg-yellow-300 transition"
-          >
-            664 348 9665
-          </a>
-          <a
-            href="https://wa.me/526643165404"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black font-bold px-6 py-3 rounded shadow hover:bg-yellow-300 transition"
-          >
-            664 316 5404
-          </a>
-          <p className="text-black font-medium">Sucursal: 664 977 6511</p>
-        </div>
+          <div className="flex flex-col items-center gap-3">
+            <a
+              href="https://wa.me/526632116884"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black font-bold py-2 px-6 rounded shadow hover:bg-gray-200 transition"
+            >
+              663 211 6684
+            </a>
+            <a
+              href="https://wa.me/526643489665"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black font-bold py-2 px-6 rounded shadow hover:bg-gray-200 transition"
+            >
+              664 348 9665
+            </a>
+            <a
+              href="https://wa.me/526643165404"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-black font-bold py-2 px-6 rounded shadow hover:bg-gray-200 transition"
+            >
+              664 316 5404
+            </a>
+            <p className="text-sm">Sucursal: 664 977 6511</p>
+          </div>
 
-        <div className="flex flex-col items-center space-y-4">
-          <img
-            src={qr}
-            alt="Escanea el QR"
-            className="w-44 h-44 md:w-52 md:h-52 rounded-xl border-4 border-black"
-          />
-          <p className="text-sm italic text-black">Escanéalo con tu cámara</p>
+          <div className="text-center">
+            <img
+              src={qr}
+              alt="QR WhatsApp"
+              className="w-32 md:w-36 lg:w-40 object-contain"
+            />
+            <p className="italic text-sm mt-1">Escanéalo con tu cámara</p>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default WhatsApp;

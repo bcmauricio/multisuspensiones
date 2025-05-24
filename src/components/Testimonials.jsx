@@ -18,7 +18,7 @@ export default function Testimonials() {
 
   return (
     <section className="bg-white py-20 px-6 font-zabal" id="testimonios">
-      <h2 className="text-4xl font-black italic text-yellow-500 text-center uppercase mb-12">
+      <h2 className="text-4xl font-black italic text-black text-center uppercase mb-12">
         Testimonios de Clientes
       </h2>
 
