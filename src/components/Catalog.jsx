@@ -1,14 +1,34 @@
 import React from "react";
-import amortiguadores from "../assets/amortiguadores.jpg";
-import direccion from "../assets/direccion.jpg";
-import suspension from "../assets/suspension.jpg";
-import soportes from "../assets/soportes.jpg";
+import amortiguadores from "../assets/Amortiguadores.png";
+import direccion from "../assets/direccion.png";
+import suspension from "../assets/suspension.png";
+import soportes from "../assets/soportes.png";
+import Cremalleras from "../assets/Cremalleras.png";
+import frenos from "../assets/frenos.png";
+import Flechas from "../assets/Flechas.png";
+import Resortes from "../assets/Resortes.png";
 
 
 const productos = [
   {
     nombre: "Amortiguadores",
     imagen: amortiguadores,
+  },
+  {
+    nombre: "Cremalleras",
+    imagen: Cremalleras,
+  },
+  {
+    nombre: "Discos-y-frenos",
+    imagen: frenos,
+  },
+  {
+    nombre: "Flechas",
+    imagen: Flechas,
+  },
+  {
+    nombre: "Resortes",
+    imagen: Resortes,
   },
   {
     nombre: "Partes de Dirección",
