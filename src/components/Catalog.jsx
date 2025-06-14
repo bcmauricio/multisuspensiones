@@ -46,7 +46,7 @@ const productos = [
 
 const Catalog = () => {
   return (
-    <section className="bg-black text-white py-20 px-4">
+    <section className="bg-black text-white py-20 px-4" id="catalog">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-black italic uppercase mb-12 text-yellow-400 tracking-wide">
           Catálogo de Refacciones

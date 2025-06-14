@@ -4,7 +4,7 @@ export default function ContactForm() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section className="bg-black text-white py-20 px-6 font-zabal" id="contacto">
+    <section className="bg-black text-white py-20 px-6 font-zabal" id="contact">
       <div className="max-w-xl mx-auto text-center">
         <h2 className="text-4xl font-black italic uppercase mb-6 text-white">
           Contáctanos

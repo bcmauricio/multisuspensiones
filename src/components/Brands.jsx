@@ -26,7 +26,7 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="bg-black py-20 px-6 text-center font-zabal" id="brands">
+    <section className="bg-black py-20 px-6 text-center font-zabal" id="marcas">
       <h2 className="text-4xl font-black italic text-yellow-500 uppercase mb-6 tracking-wide drop-shadow-md">
         Trabajamos con las mejores marcas
       </h2>

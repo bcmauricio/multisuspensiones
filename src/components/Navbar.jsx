@@ -52,6 +52,14 @@ export default function Navbar() {
               Nosotros
             </a>
           </li>
+           <li className="p-3 md:p-0">
+            <a
+              href="#marcas"
+              className="text-black font-medium italic tracking-wide hover:text-white transition"
+            >
+              Marcas
+            </a>
+          </li>
           <li className="p-3 md:p-0">
             <a
               href="#catalog"
@@ -62,10 +70,10 @@ export default function Navbar() {
           </li>
           <li className="p-3 md:p-0">
             <a
-              href="#sucursal"
+              href="#cotiza"
               className="text-black font-medium italic tracking-wide hover:text-white transition"
             >
-              Sucursal
+              Cotiza
             </a>
           </li>
           <li className="p-3 md:p-0">

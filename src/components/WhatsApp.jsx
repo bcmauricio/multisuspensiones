@@ -4,7 +4,7 @@ import qr from "../assets/qr-whatsapp.png";
 
 const WhatsApp = () => {
   return (
-    <section className="bg-yellow-400 text-black py-10 font-zabal">
+    <section className="bg-yellow-400 text-black py-10 font-zabal" id="cotiza">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-black italic mb-1">
           COTIZA POR WHATSAPP
