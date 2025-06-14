@@ -3,16 +3,40 @@ import React from "react";
 export default function Testimonials() {
   const testimonios = [
     {
-      texto: "Excelente servicio, muy buena atención.",
-      autor: "Juan Pérez",
+      texto: "Excelentes precios y buena atención.",
+      autor: "Ruben Hernandez",
     },
     {
-      texto: "Las refacciones llegaron rápido y todo bien.",
-      autor: "Ana Gómez",
+      texto: "Muy Grata experiencia, pacientes e incluso te orientan con las piezas que pudieras estar buscando y su plus servicio a domicilio.",
+      autor: "Dianna Diaz",
     },
     {
-      texto: "Buen surtido, buen precio y garantía clara.",
-      autor: "Luis Ramírez",
+      texto: "Excelente atencion por Whatsapp, respuesta muy rapida, entrega a domicilio en menos de 2 hrs.",
+      autor: "Carlo Ficacci",
+    },
+    {
+      texto: "Muy buen servicio, la verdad me atendieron muy bien, el envio a domicilio sin problemas.",
+      autor: "Juan Garcia",
+    },
+     {
+      texto: "Buen lugar para encontrar refacciones, excelente atencion.",
+      autor: "Kenya Del Real",
+    },
+    {
+      texto: "Eficientes y muy responsables buena calidad.",
+      autor: "Adiel Maldonado",
+    },
+    {
+      texto: "Excelente atencion y muy buenos precios recomendado 100%.",
+      autor: "Rene Hernandez",
+    },
+    {
+      texto: "Excelente trato, estacionamiento y buen trato.",
+      autor: "Nestor Daniel Castro Flores",
+    },
+    {
+      texto: "Buena variedad y calidad, incluso modelos viejos.",
+      autor: "Juan Carlos Roman",
     },
   ];
 

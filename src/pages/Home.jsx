@@ -4,7 +4,7 @@ import About from "../components/About";
 import Catalog from "../components/Catalog";
 import WhatsApp from "../components/WhatsApp";
 import Garantias from "../components/Garantias";
-import InstagramFeed from "../components/InstagramFeed";
+import FacebookFeed from "../components/FacebookFeed";
 import Testimonials from "../components/Testimonials";
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import ContactForm from "../components/ContactForm";
@@ -29,7 +29,7 @@ export default function Home() {
         <WhatsApp />
         <Garantias />
         <Testimonials />
-        <InstagramFeed />
+        <FacebookFeed />
         <ContactForm />
         <Footer />
         <FloatingWhatsApp />
