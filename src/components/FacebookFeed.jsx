@@ -1,4 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+
+// Tu URL de Google Sheets publicada como CSV
+const SHEET_CSV_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTjG1zgjyp9PRqCQpY-6RIyK1G_7p1uUHaIWrRr35DNNdPYqvVKrChRkXbPK1NlKQSQyizRSUVZaF6l/pub?output=csv";
+
+// Función básica para convertir CSV a JSON
+function csvToJson(csv) {
+  const lines = csv.split("\n").filter(Boolean);
+  const headers = lines[0].split(",").map(h => h.trim().replace(/(^"|"$)/g, ""));
+  return lines.slice(1).map(line => {
+    const values = line.split(",").map(val => val.trim().replace(/(^"|"$)/g, ""));
+    const obj = {};
+    headers.forEach((header, i) => (obj[header] = values[i] || ""));
+    return obj;
+  });
+}
 
 export default function FacebookFeed() {
   const [posts, setPosts] = useState([]);
@@ -6,24 +22,30 @@ export default function FacebookFeed() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://drive.google.com/uc?id=1baUa1AS7Qxuq_vkO2r3RX5wJT9BPW_Zp&export=download")
-      .then((res) => res.json())
-      .then((data) => {
-        setPosts(data);
-      })
-      .catch((err) => {
-        setError("Error al cargar el feed.");
-        console.error(err);
-      })
-      .finally(() => setLoading(false));
+    async function fetchCSV() {
+      try {
+        const response = await fetch(SHEET_CSV_URL);
+        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+        const csv = await response.text();
+        const data = csvToJson(csv);
+        setPosts(data.slice(0, 4)); // Solo los primeros 4
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchCSV();
   }, []);
 
   return (
-    <section className="bg-yellow-400 py-20 px-4 text-center font-zabal" id="facebook">
+    <section
+      className="bg-yellow-400 py-20 px-4 text-center font-zabal"
+      id="facebook"
+    >
       <h2 className="text-4xl font-black italic uppercase text-black mb-10">
-        Síguenos en Facebook
+        Últimos Posts
       </h2>
-
       {loading && <p className="text-black text-lg">Cargando publicaciones...</p>}
       {error && <p className="text-red-700 text-lg">Error: {error}</p>}
 
@@ -32,24 +54,32 @@ export default function FacebookFeed() {
           {posts.map((post, i) => (
             <a
               key={i}
-              href={post.permalink_url}
+              href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block overflow-hidden rounded-xl shadow hover:scale-105 transition-transform duration-300"
+              className="block overflow-hidden rounded-xl shadow hover:scale-105 transition-transform duration-300 bg-white"
             >
-              <img
-                src={post.full_picture}
-                alt={post.message?.slice(0, 80) || "Publicación de Facebook"}
-                className="w-full h-60 object-cover"
-              />
-              {post.message && (
-                <p className="text-sm p-2 text-left text-black">{post.message}</p>
+              {post.image && (
+                <img
+                  src={post.image}
+                  alt={post.message ? post.message.slice(0, 80) : "Facebook post"}
+                  className="w-full h-80 object-cover rounded-t-xl"
+                  onError={e => {
+                    e.target.onerror = null;
+                    e.target.src = "/no-image.png"; // imagen por default si falla
+                  }}
+                />
+
               )}
+              <div className="p-3">
+                <p className="text-sm text-left text-black font-medium">
+                  {post.message}
+                </p>
+              </div>
             </a>
           ))}
         </div>
       )}
-
       <p className="mt-10 text-lg text-black">
         <a
           href="https://www.facebook.com/Multisuspensiones"
